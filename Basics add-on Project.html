@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watching Korean dramas- My hobby 🎭</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);
+        text-align: center;
+      }
+      .theme {
+        background-color: black;
+        color: #f2f2f2;
+        border: 1px solid #ebd5d5;
+        cursor: pointer;
+      }
+      .theme:hover {
+        background-color: #f2f2f2;
+        color: black;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      .k-drama-first-picture {
+        border-radius: 10px;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 150ms ease-in-out;
+      }
+      .k-drama-first-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+      .Grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        padding: 10px;
+      }
+      .Grid img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 150ms ease-in-out;
+      }
+      .Grid img:hover {
+        transform: scale(1.2);
+      }
+      .contents {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+      img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        text-align: left;
+      }
+
+      button {
+        background-color: #f2f2f2;
+        color: black;
+        font-size: 16px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #ebd5d5;
+      }
+      footer {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .dark-theme {
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: white;
+      }
+      .dark-theme .contents {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme">Change theme</button>
+    <div class="contents">
+      <h1>Watching Korean dramas🎭</h1>
+      <h2>My favorite hobby</h2>
+      <a href="https://en.wikipedia.org/wiki/Korean_drama" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/176/original/Pic5-ezgif.com-avif-to-jpg-converter.jpg?1741897450"
+          alt="Korean drama"
+          class="k-drama-first-picture"
+      /></a>
+      <div class="Grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/179/original/Pic_3.jpg?1741897493"
+          alt="Korean drama"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/177/original/Pic2-ezgif.com-webp-to-jpg-converter.jpg?1741897464"
+          alt="Korean drama"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/180/original/Pic_4.jpg?1741897507"
+          alt="Korean drama"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/178/original/Pic_1.jpg?1741897481"
+          alt="Korean drama"
+        />
+      </div>
+      <p>
+        Korean drama (Korean: 한국 드라마; RR: Hanguk deurama), also known as
+        K-drama or Koreanovela, refers to Korean-language television shows made
+        in South Korea. These shows began to be produced around the early 1960s,
+        but were mostly consumed domestically until the rise of the Korean Wave
+        in the 1990s. They have since achieved significant international
+        popularity, with millions of viewers across the world.
+      </p>
+      <a
+        href="https://list-of-my-favorite-korean-dramas.tiiny.site"
+        target="_blank"
+        ><button>List of my favourite dramas</button>
+      </a>
+    </div>
+    <footer>Coded with 💜 by Mmeri Kalu</footer>
+    <script>
+      function DarkTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark-theme");
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", DarkTheme);
+    </script>
+  </body>
+</html>
